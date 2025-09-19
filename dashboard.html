@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMT Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>EMT Dashboard</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <main class="dashboard-container">
+        <section class="search-section">
+            <h2>Patient Search</h2>
+            <div class="search-form">
+                <input type="text" id="patient-id-input" placeholder="Enter Patient ID (e.g., 123456)">
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+        <section id="results-section" class="results-section">
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 PULSEPOINT</p>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
