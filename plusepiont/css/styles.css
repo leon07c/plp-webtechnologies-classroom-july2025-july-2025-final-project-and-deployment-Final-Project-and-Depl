@@ -1,0 +1,164 @@
+/* Universal Styles */
+:root {
+    --primary-color: #3b536d;
+    --secondary-color: #de0950;
+    --background-color: #4a505a;
+    --card-background: #eaeff3;
+    --text-color: #141415;
+    --danger-color: #ff0019;
+}
+
+#eaeff3#9e9e9e
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--card-background);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--card-background);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form and Buttons */
+.login-container, .dashboard-container, .patient-history-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(142, 140, 140, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #c2c8ce;
+    background-color: #3e926b;
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #84909e;
+}
+
+#logout-btn {
+    background-color: var(--danger-color);
+}
+
+/* Dashboard Styles */
+.search-section {
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.search-form input {
+    flex-grow: 1;
+}
+
+.results-section .patient-card {
+    background-color: #6989a9;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.results-section .patient-card:hover {
+    transform: translateY(-5px);
+}
+
+.patient-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Patient History Styles */
+.patient-history-container h2 {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.patient-history-container h3 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
+
+.patient-history-container ul {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.patient-history-container ul li {
+    margin-bottom: 0.5rem;
+}
+
+.error-message {
+    color: var(--danger-color);
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .search-form {
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
