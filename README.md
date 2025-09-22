@@ -38,4 +38,4 @@ Biometric ID (Simulated): 55555
 Deployment
 The Secure EMT Portal is a static site, making it easy to deploy. It has been successfully hosted on GitHub Pages.
 
-Live Demo:  [Your Live URL Here]
+Live Demo: https://plp-webtechnologies-classroom-july2-blue.vercel.app/
